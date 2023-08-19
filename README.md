@@ -9,3 +9,4 @@
 $python zphisher.py
 ## تمام ##
 وارد منو شوید هر هکی دوس دارید انجام بدید
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sethc.exe"
